@@ -1,7 +1,7 @@
-package cadastro.app.util;
+package cadastro.util;
 
 
-import cadastro.app.model.Informacoes;
+import cadastro.model.Informacoes;
 public class CadastroPrint {
 
 	public String imprimir(Informacoes informacao) {

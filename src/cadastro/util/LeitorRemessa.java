@@ -1,4 +1,4 @@
-package cadastro.app.util;
+package cadastro.util;
 
 
 public class LeitorRemessa {

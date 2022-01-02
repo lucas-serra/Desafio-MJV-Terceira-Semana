@@ -1,4 +1,4 @@
-package cadastro.app.util;
+package cadastro.util;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

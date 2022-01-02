@@ -1,4 +1,4 @@
-package cadastro.app.model;
+package cadastro.model;
 
 public class SalarioPretendido {
 	private Double salarioMin;
