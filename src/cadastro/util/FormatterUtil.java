@@ -40,4 +40,11 @@ public class FormatterUtil {
 		rg.insert(6, ".");
 		return rg.toString();
 	}
+	
+	public static String cep(String cep) {
+		StringBuilder cepFormat = new StringBuilder();
+		cepFormat.append(cep);
+		cepFormat.insert(4, "-");
+		return cepFormat.toString();
+	}
 }
