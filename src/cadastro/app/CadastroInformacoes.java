@@ -12,7 +12,7 @@ public class CadastroInformacoes {
 	public static void main(String[] args) {
 
 		LeitorRemessa leitor = new LeitorRemessa();
-		List<Informacoes> informacoes = leitor.converter("D:\\PROJETOS\\aula_8\\Desafio-MJV-Terceira-Semana\\src\\registrosDelimitados.txt");
+		List<Informacoes> informacoes = leitor.converter("C:\\estudo\\atividade_grupo_semana3\\Desafio-MJV-Terceira-Semana\\src\\registrosDelimitados.txt");
 		
 
 		FichaCadastral ficha = new FichaCadastral();
@@ -20,9 +20,9 @@ public class CadastroInformacoes {
 		
 		for(Informacoes info: informacoes) {
 			System.out.println(ficha.imprimir(info));
-			FabricaArquivo.criarRegistro(info, "D:\\PROJETOS\\aula_8\\Desafio-MJV-Terceira-Semana\\src");
+			
 		}
-				
+		FabricaArquivo.criarRegistro(informacoes.get(1), "C:\\estudo\\atividade_grupo_semana3\\Desafio-MJV-Terceira-Semana\\src");	
 		
 	}
 }

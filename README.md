@@ -16,4 +16,13 @@ Aplicar o conhecimento obtido através do estudo das classes apresentadas pelos 
 
 5.Revisar os campos faltantes confome layout
 
-6.Os registros representarão cada integrante do grupo
+6.Os registros representarão cada integrante do grupo.
+
+## Componentes do Grupo:
+
+- [Daniella Magalhães](https://github.com/DaniellaMagalhaesSiqueira)
+- [Emerson Luiz](https://github.com/emerge8)
+- [Juliana Oliveira](https://github.com/JuOliver)
+- [Lucas Serra](https://github.com/lucas-serra)
+- [Matheus Alencar](https://github.com/matlencar)
+- [Stefani Barros](https://github.com/ste-fani)
