@@ -1,4 +1,4 @@
-package cadastro.app.model;
+package cadastro.model;
 
 import java.time.LocalDate;
 
