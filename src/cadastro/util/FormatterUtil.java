@@ -1,6 +1,6 @@
 package cadastro.util;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public class FormatterUtil {
@@ -13,7 +13,7 @@ public class FormatterUtil {
 		String cpfFormatado = part1.concat(".").concat(part2).concat(".").concat(part3).concat("-").concat(part4);
 		return cpfFormatado;
 		}
-	public static String data(LocalDateTime data) {
+	public static String data(LocalDate data) {
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 		return data.format(formatter);
 	}
@@ -39,5 +39,12 @@ public class FormatterUtil {
 		rg.insert(9, "-");
 		rg.insert(6, ".");
 		return rg.toString();
+	}
+	
+	public static String cep(String cep) {
+		StringBuilder cepFormat = new StringBuilder();
+		cepFormat.append(cep);
+		cepFormat.insert(4, "-");
+		return cepFormat.toString();
 	}
 }

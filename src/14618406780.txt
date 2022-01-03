@@ -1,0 +1,18 @@
+--------------------Dados Pessoais---------------------------
+
+Nome: Lucas Dias Serra / CPF : 146.184.067-80 / RG : 23.740.515-5
+Sexo : M
+Profissão: Desenvolvedor de Sistemas
+Data de nascimento: 11/11/2000
+Endereço : Rua Emigdio Maia SantosNº : 201 / Bairro :Vila dos Coroados / Municipio: São Fidélis / UF: RJ
+CEP : 28400000 / Naturalidade : São Fidelis, Rio de Janeiro /Pais : Brasil
+Telefone : (22)27586-105 / Cel : (22)999956924
+Email : lucasdserra1234@gmail.com
+
+--------------------Pretensão Salarial------------------------
+Pretensão Salarial Minima : 2000.0
+Pretensão Salarial Maxima : 5000.0
+
+--------------------Grau de Escolaridade----------------------
+Escolaridade : MEDIO
+================================================================
