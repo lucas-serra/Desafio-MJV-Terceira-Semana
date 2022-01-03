@@ -1,13 +1,19 @@
 package cadastro.app;
 
-import cadastro.util.FormatterUtil;
+import java.util.List;
+
+import cadastro.model.Informacoes;
+import cadastro.util.LeitorRemessa;
 
 public class CadastroInformacoes {
 
 	public static void main(String[] args) {
-		String rg= "237405158";
-		
-		System.out.println(FormatterUtil.rG(rg));
+
+		LeitorRemessa leitor = new LeitorRemessa();
+		List<Informacoes> informacoes = leitor.converter("D:\\PROJETOS\\aula_8\\Desafio-MJV-Terceira-Semana\\src\\registrosDelimitados.txt");
+		for(Informacoes info: informacoes) {
+			System.out.println(info.toString());
+		}
 		
 		
 		

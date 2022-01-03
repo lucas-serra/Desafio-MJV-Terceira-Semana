@@ -13,6 +13,8 @@ public class Informacoes {
 	private Double salarioMin;
 	private Double salarioMax;
 	private String endereco;
+	private String profissao;
+	private boolean estrangeiro;
 	private Integer numero;
 	private String cep;
 	private String bairro;
@@ -38,6 +40,18 @@ public class Informacoes {
 	}
 	public void setNumero(Integer numero) {
 		this.numero = numero;
+	}
+	public String getProfissao() {
+		return profissao;
+	}
+	public void setProfissao(String profissao) {
+		this.profissao = profissao;
+	}
+	public boolean isEstrangeiro() {
+		return estrangeiro;
+	}
+	public void setEstrangeiro(boolean estrangeiro) {
+		this.estrangeiro = estrangeiro;
 	}
 	public String getCep() {
 		return cep;
