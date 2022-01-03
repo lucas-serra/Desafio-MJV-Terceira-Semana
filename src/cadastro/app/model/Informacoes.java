@@ -10,8 +10,6 @@ public class Informacoes {
 	private Ensino formacao;
 	private SalarioPretendido salario;
 	
-	
-	
 	public Ensino getFormacao() {
 		return formacao;
 	}
@@ -50,9 +48,5 @@ public class Informacoes {
 		return "Informacoes [dataNascimento=" + dataNascimento + ", cpf=" + cpf + ", nome=" + nome + ", formacao="
 				+ formacao + ", salario=" + salario + "]";
 	}
-	
-	
-
-	
-	
+			
 }

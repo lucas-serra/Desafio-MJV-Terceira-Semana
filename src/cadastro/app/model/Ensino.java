@@ -6,11 +6,10 @@ public enum Ensino {
 	MEDIO_INCOMPLETO("Médio incompleto"),MESTRADO("Mestrado"), DOUTORADO("Doutorado"), ANALFABETO("Analfabeto"),
 	LE_E_ESCREVE("Lê e escreve");
 
-	
 	private String nome;
 	
 	Ensino(String nome) {
-		this.nome=nome;
+		this.nome = nome;
 	}
 	public String getNome() {
 		return nome;
