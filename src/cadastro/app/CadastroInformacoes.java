@@ -20,7 +20,7 @@ public class CadastroInformacoes {
 		*/
 		
 		FichaCadastral ficha = new FichaCadastral();
-		ficha.imprimir(informacoes.get(0));
+		System.out.println(ficha.imprimir(informacoes.get(0)));
 		
 		
 	}
