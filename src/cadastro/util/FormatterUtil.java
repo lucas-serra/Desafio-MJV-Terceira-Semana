@@ -1,7 +1,10 @@
 package cadastro.util;
 
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.Locale;
 
 public class FormatterUtil {
 
@@ -47,4 +50,12 @@ public class FormatterUtil {
 		cepFormat.insert(4, "-");
 		return cepFormat.toString();
 	}
+	
+	public static String moeda(Double valor) {
+        DecimalFormatSymbols symbols = new DecimalFormatSymbols(Locale.US);
+        symbols = new DecimalFormatSymbols(new Locale("pt", "BR"));
+        
+        DecimalFormat formatter = new DecimalFormat("¤ ###,###.###", symbols);
+        return formatter.format(valor);
+    }
 }

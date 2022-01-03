@@ -7,21 +7,25 @@ public class FichaCadastral {
 	public String imprimir(Informacoes informacoes) {
 		StringBuilder ficha = new StringBuilder();
 		
+		ficha.append("======================================================================\n");
 		ficha.append("-------------------------Ficha Profissional---------------------------\n");
+		ficha.append("======================================================================\n");
 		ficha.append("Profissão: " + informacoes.getProfissao() + "\n");
-		ficha.append("Nome: " + informacoes.getNome());
-		ficha.append("Salário Requerido:Máximo: "+informacoes.getSalarioMax()+"Mínimo: "+informacoes.getSalarioMin()+"\n");
-		ficha.append("Data de nascimento: " + FormatterUtil.data(informacoes.getDataNascimento()) + "\tCPF : " + FormatterUtil.cpf(informacoes.getCpf())+ "\tRG : " + FormatterUtil.rG(informacoes.getRg())+"\n");
-		ficha.append("Endereço : " + informacoes.getEndereco()+"\n");
-		ficha.append("Nº : " + informacoes.getNumero() + "\tBairro :" + informacoes.getBairro() + "\tMunicipio: " +informacoes.getMunicipio() +"\tUF: "+ informacoes.getUf()+ "\n");
-		ficha.append("CEP : " + informacoes.getCep() + "\tNaturalidade : " + informacoes.getNaturalidade() + "\tPaís : " + informacoes.getPais() + "\n");
+		ficha.append("Nome: " + informacoes.getNome()+"\n");
+		ficha.append("Salário Requerido: Máximo: "+FormatterUtil.moeda(informacoes.getSalarioMax())+" Mínimo: "+FormatterUtil.moeda(informacoes.getSalarioMin())+"\n");
+		ficha.append("Data de nascimento: " + FormatterUtil.data(informacoes.getDataNascimento()) + "\tCPF: " + FormatterUtil.cpf(informacoes.getCpf())+ "\tRG: " + FormatterUtil.rG(informacoes.getRg())+"\n");
+		ficha.append("Endereço: " + informacoes.getEndereco()+"\n");
+		ficha.append("Nº: " + informacoes.getNumero() + "\tBairro: " + informacoes.getBairro() + "\tMunicipio: " +informacoes.getMunicipio() +"\tUF: "+ informacoes.getUf()+ "\n");
+		ficha.append("CEP: " + informacoes.getCep() + "\tNaturalidade : " + informacoes.getNaturalidade() + "\tPaís: " + informacoes.getPais() + "\n");
+		ficha.append("Telefone: " + FormatterUtil.telefone(informacoes.getTelefone()) + " / Cel: " + FormatterUtil.celular(informacoes.getCelular()) + "\n");
+		ficha.append("Email: " + informacoes.getEmail() + "\n");
+		ficha.append("Sexo: " + informacoes.getSexo() + "\n");
+		ficha.append("\n");
+		ficha.append("Grau de Escolaridade :\n");
 		
-		ficha.append("Sexo : " + informacoes.getSexo() + "\n");
-		
-		ficha.append("--------------------Grau de Escolaridade----------------------\n");
 		ficha.append(informacoes.getFormacao() + "\n");
 		
-		ficha.append("================================================================");
+		ficha.append("======================================================================\n");
 		return ficha.toString();
 	}
 }
